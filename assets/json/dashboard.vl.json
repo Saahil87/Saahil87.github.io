@@ -1,0 +1,36 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/UIUC-iSchool-DataViz/is445_bcubcg_fall2022/main/data/licenses_fall2022.csv"
+  },
+  "hconcat": [
+    {
+      "params": [{"name": "brush", "select": "interval"}],
+      "mark": "rect",
+      "height": 400,
+      "width": 300,
+      "encoding": {
+        "x": {"field": "License Type", "type": "nominal"},
+        "y": {"field": "State", "type": "ordinal"},
+        "color": {"aggregate": "count", "type": "quantitative"}
+      }
+    },
+    {
+      "transform": [{"filter": {"param": "brush"}}],
+      "mark": "bar",
+      "encoding": {
+        "x": {
+          "field": "License Type",
+          "type": "nominal",
+          "title": "License Type"
+        },
+        "y": {
+          "aggregate": "count",
+          "type": "quantitative",
+          "axis": {"title": "Frequency"}
+        }
+      }
+    }
+  ],
+  "config": {}
+}
