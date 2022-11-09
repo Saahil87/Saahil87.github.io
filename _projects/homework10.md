@@ -37,6 +37,10 @@ Below is where we have put some links to both the data and the analysis code as 
 {% include elements/button.html link="https://raw.githubusercontent.com/UIUC-iSchool-DataViz/is445_bcubcg_fall2022/main/data/licenses_fall2022.csv" text="The Data" %}
 </div>
 
+<div class="center">
+{% include elements/button.html link="https://starboard.gg/vasanthachandrasekaran/Chandrasekaran-vasantha-homework-10-net49aB" text="Analysis on Starboard" %}
+</div>
+
 <div class="right">
-{% include elements/button.html link="https://starboard.gg/vasanthachandrasekaran/Chandrasekaran-vasantha-homework-10-net49aB" text="Analysis on Jupyter" %}
+{% include elements/button.html link="https://github.com/Saahil87/Saahil87.github.io/blob/main/python_notebooks/test_imports_License.ipynb" text="Analysis on Jupyter" %}
 </div>

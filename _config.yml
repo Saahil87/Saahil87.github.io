@@ -121,5 +121,3 @@ exclude:
   - LICENSE.md~
   - config.yml~
   - "*.log"
-  - "*.ipynb"
-  - "python_notebooks/*"
