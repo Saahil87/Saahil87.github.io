@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+
+<!--
+  portfolYOU Jekyll theme by Youssef Raafat
+  Free for personal and commercial use under the MIT license
+  https://github.com/YoussefRaafatNasry/portfolYOU
+-->
+
+<html lang="en" class="h-100">
+
+<head>
+
+  
+  
+  
+
+  
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Final Project - Vasantha Chandrasekaran, Saahil Hiranandani">
+  <meta property="og:description" content="IS 445 Final Project - An in-depth analysis of Steam data - completed by Vasantha Chandrasekaran and Saahil Hiranandani">
+  <meta property="og:image" content="assets/pngs/steam.png">
+
+  <title>Final Project - Vasantha Chandrasekaran, Saahil Hiranandani</title>
+  <meta name="description" content="IS 445 Final Project - An in-depth analysis of Steam data - completed by Vasantha Chandrasekaran and Saahil Hiranandani">
+
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico">
+
+  <!-- Theme style -->
+  <script src="/assets/js/theme.js"></script>
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.0/css/all.css">
+
+  <!-- Bootstrap CSS CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+
+  <!-- Animate CSS CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/assets/css/style.css">
+
+</head>
+
+<body class="h-100 d-flex flex-column">
+
+  <main class="flex-shrink-0 container mt-5">
+    <nav class="navbar navbar-expand-lg navbar-themed">
+
+  <a class="navbar-brand" href="/"><h5><b>PossibleCorg</b></h5></a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fas fa-1x fa-bars text-themed"></i>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav ml-auto"><a class="nav-item nav-link " href="/python_notebooks/"></a>
+
+      <a class="nav-item nav-link active" href="/projects/">Projects</a>
+
+      <a class="nav-item nav-link " href="/blog/">Blog</a>
+
+      <a class="nav-item nav-link " href="/about/">About</a>
+
+      
+
+      <span id="theme-toggler" class="nav-item nav-link" role="button" onclick="toggleTheme()"></span>
+    </div>
+  </div>
+
+</nav>
+    <div class="col-lg-10 mx-auto mt-5 markdown-body">
+  <h1 id="is-445-final-project---an-in-depth-analysis-of-steam-data">IS 445 Final Project - An in-depth analysis of Steam data</h1>
+<ul>
+  <li>completed by Vasantha Chandrasekaran and Saahil Hiranandani</li>
+</ul>
+
+<h2 id="data">Data</h2>
+
+<p>Data for this project comes from <a href="https://data.world/craigkelly/steam-game-data">Steam Game Data</a> which is a combination of data from publicly available Steam API’s and steamspy.com, inspired by steamdb.info. We have also referred Professor Jill’s <a href="https://starboard.gg/jnaiman/inClass_week10_online_fall2022-nrSZM7g">In class notebooks</a> for reference.</p>
+
+<h2 id="background">Background</h2>
+
+<p>Steam is a video game distribution platform that has gained immense popularity among the gamers across the world. The platform has about 50,000 games and about 120 million monthly active users. By analyzing the Steam Game Platform statistics and session metrics, interesting insights could be obtained. The insights would benefit game publishers in finding the factors that keeps players engaged, gamers in knowing player shares, new genres, and other gaming platform competitors.</p>
+
+<p>In this article, we aim to visualize aspects of the Steam Game Platform such as the recommendation count, the number of free and paid games and their trends with respect to the release month of the games. An interactive dashboard is generated using the source data  to observe the correlation in the number of games played and the recommendation count with the release month of the games.</p>
+
+<h2 id="interactive-visualization">Interactive visualization</h2>
+
+<p>The interactive dashboard shown in Figure 1 shows the number of free and paid games in the Steam Game Platform and the recommendation count in games with respect to the month of release of games.  If an interval of months on the left plot is selected using the mouse pointer, the line chart in the right changes according to the interval selected</p>
+
+<p>The left chart is the driver plot that shows the number of free and paid games in the Steam Game platform. The number of free and paid games in each month of release of game can also be observed. The driver plot is linked to the driven plot shown on the right that displays the recommendation count of games in the Steam Game platform as a line chart. The peaks represent the recommendation count in each release month of the games.</p>
+
+<p>The dashboard shows the distribution of free and paid games across the release months of games, the months during which there was an increase or decrease in the number of games played in the platform and how the count of recommendations in the platform impacts the number of games and gaming subscription. It can be seen that more number of games are played and purchased if a game is released in the month of August, and the increase in recommendation count during the same is a correlation that gives insight about the user activity and the platform recommendation activity.</p>
+
+<vegachart schema-url="/assets/json/project-chart1.vl.json" style="width: 100%"></vegachart>
+
+<h2 id="first-plot-visualizes-the-count-of-license-types-from-each-state">First plot visualizes the count of license types from each state.</h2>
+
+<h3 id="features">Features:</h3>
+
+<ul>
+  <li>Plot 1 is a visualization that shows the count of license types from each state from the Licenses Dataset. ‘License Type’ is a nominal variable with different categories of license types. ‘State’ is an ordinal variable. The count of license types in each state is visualized in Plot-1.</li>
+</ul>
+
+<h3 id="design-choices">Design Choices:</h3>
+
+<ul>
+  <li><b>Scale</b>: The x axis is chosen to be the License Type and the y-axis is chosen to be States in United States.</li>
+  <li><b>Mark</b>: The mark is chosen as ‘rect’ as it would be  ideal for interpreting the information about the count of license types in each state.</li>
+  <li><b>Encoding Type</b>: The encoding type for the License Type is chosen as ‘nominal’ since there is no ordering in the categories. The encoding type for States is chosen as ‘ ordinal’ so that the states are listed in alphabetical order.</li>
+  <li><b>Color</b>:  A colormap is used for the count of records in license type across each state. The encoding type is chosen as ‘ quantitative’, and the aggregate is chosen as ‘count’ since the objective of the visualization is visualize the count of records of license types in each state. The state having the higher number in the variety of license type is highlighted according to the color scale shown on the right.</li>
+</ul>
+
+<h3 id="transformations">Transformations:</h3>
+
+<ul>
+  <li>Interactivity is achieved by the ‘brush’ parameter. The plot is interactive in a way that it allows the selection of a particular interval.</li>
+</ul>
+
+<h3 id="overlap">Overlap:</h3>
+<ul>
+  <li>There is no overlap with the analysis done in Homework-9 as different datasets have been used for both approaches.</li>
+</ul>
+
+<vegachart schema-url="/assets/json/visualization.vl.json" style="width: 100%"></vegachart>
+
+<h2 id="second-plot-is-a-histogram-of-frequency-of-license-types">Second plot is a histogram of frequency of license types.</h2>
+
+<h3 id="features-1">Features:</h3>
+
+<ul>
+  <li>Plot 2 is a histogram of the frequency of license types. ‘License Type’ is a nominal variable with different categories of license types. The frequency of license types in each state across US is visualized in Plot-2.</li>
+</ul>
+
+<h3 id="design-choices-1">Design Choices:</h3>
+
+<ul>
+  <li><b>Scale</b>: The x axis is chosen to be the License Type and the y-axis is chosen to be the frequency.</li>
+  <li><b>Mark</b>: The mark is chosen as ‘bar’ as it would be  ideal for interpreting the information about the frequency of license types in each state.</li>
+  <li><b>Encoding Type</b>: The encoding type for the License Type is chosen as ‘nominal’ since there is no ordering in the categories.</li>
+  <li><b>Color</b>:  The color of the bars is not chosen as the objective is to only visualize the frequency of each license type, and by default is blue in color. The encoding type is chosen as ‘ quantitative’, and the aggregate is chosen as ‘count’ since the objective of the visualization is visualize the frequency of  license types.</li>
+</ul>
+
+<h3 id="transformations-1">Transformations:</h3>
+
+<ul>
+  <li>Plot-2 is not interactive, and it is a histogram of the frequency of license types.</li>
+</ul>
+
+<h3 id="overlap-1">Overlap:</h3>
+<ul>
+  <li>There is no overlap with the analysis done in Homework-9 as different datasets have been used for both approaches.</li>
+</ul>
+
+<vegachart schema-url="/assets/json/visualization2.vl.json" style="width: 100%"></vegachart>
+
+<h2 id="third-and-final-plot-is-an-interactive-dashboard-of-both-plots">Third and final plot is an interactive dashboard of both plots</h2>
+
+<p>The plot showing the count of license types in each state(Plot-1) and the frequency of license types (Plot-2) have been used to create an interactive dashboard. The encoding type, color code and other characteristics are the same as shown in Plot-1 and Plot-2.</p>
+
+<p><b>Interactivity</b>: The dashboard is interactive. If a particular interval is selected in the left visualization, the plot on the right is updated showing the frequency of license types according to the region selected in the License Type vs States visualization.</p>
+
+<p>The interactivity helps in visualizing the information better; The frequency of license types in a particular state or group of states can be visualized easily and the count can be interpreted in a better way.</p>
+
+<vegachart schema-url="/assets/json/dashboard.vl.json" style="width: 100%"></vegachart>
+
+<h2 id="the-data-and-analysis">The data and analysis</h2>
+
+<p>Below is where we have put some links to both the data and the analysis code as buttons:</p>
+
+<!-- these are written in a combo of html and liquid -->
+
+<div class="left">
+<a class="m-1 btn btn-outline-primary btn-2 " href="https://raw.githubusercontent.com/UIUC-iSchool-DataViz/is445_bcubcg_fall2022/main/data/licenses_fall2022.csv">
+  The Data
+</a>
+</div>
+
+<div class="center">
+<a class="m-1 btn btn-outline-primary btn-2 " href="https://starboard.gg/vasanthachandrasekaran/Chandrasekaran-vasantha-homework-10-net49aB">
+  Analysis on Starboard
+</a>
+</div>
+
+<div class="right">
+<a class="m-1 btn btn-outline-primary btn-2 " href="https://github.com/Saahil87/Saahil87.github.io/blob/main/python_notebooks/test_imports_License.ipynb">
+  Analysis on Jupyter
+</a>
+</div>
+
+</div>
+  </main>
+  <footer class="mt-auto py-3 text-center">
+
+  <small class="text-muted mb-2">
+    <i class="fas fa-code"></i> with <i class="fas fa-heart"></i>
+    by <strong>A. P. Corgi</strong>
+  </small>
+
+  <div class="container-fluid justify-content-center"><a class="social mx-1"  href="https://www.behance.net/your_username"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#1769ff'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fab fa-behance fa-1x"></i>
+    </a><a class="social mx-1"  href="mailto:username@domain.com"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#db4437'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fas fa-envelope fa-1x"></i>
+    </a><a class="social mx-1"  href="https://www.facebook.com/your_username"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#3b5998'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fab fa-facebook fa-1x"></i>
+    </a><a class="social mx-1"  href="https://www.github.com/Saahil87"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#333333'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fab fa-github fa-1x"></i>
+    </a><a class="social mx-1"  href="https://www.linkedin.com/in/your_username"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#007bb5'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fab fa-linkedin-in fa-1x"></i>
+    </a><a class="social mx-1"  href="https://medium.com/@your_username"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#00ab6c'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fab fa-medium fa-1x"></i>
+    </a><a class="social mx-1"  href="https://www.twitch.tv/your_username"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#6441a5'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fab fa-twitch fa-1x"></i>
+    </a><a class="social mx-1"  href="https://www.twitter.com/your_username"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#1da1f2'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fab fa-twitter fa-1x"></i>
+    </a><a class="social mx-1"  href="https://www.vimeo.com/your_username"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#162221'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fab fa-vimeo-v fa-1x"></i>
+    </a><a class="social mx-1"  href="https://www.youtube.com/your_channel_name"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#ff0000'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fab fa-youtube fa-1x"></i>
+    </a>
+
+</div><small id="attribution">
+    theme <a href="https://github.com/YoussefRaafatNasry/portfolYOU">portfolYOU</a>
+  </small>
+
+</footer>
+
+
+<!-- Custom page specific js files -->
+  
+    <script src='/assets/js/vega.min.js' type="text/javascript"></script>
+  
+    <script src='/assets/js/vega-lite.min.js' type="text/javascript"></script>
+  
+    <script src='/assets/js/vega-embed.min.js' type="text/javascript"></script>
+  
+    <script src='/assets/js/justcharts.js' type="text/javascript"></script>
+  
+
+
+
+  
+  <!-- GitHub Buttons -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+<!-- jQuery CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper.js CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+
+<!-- Bootstrap JS CDN -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<!-- wow.js CDN & Activation -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+<script> new WOW().init(); </script>
+
+<!-- Initialize all tooltips -->
+<script>
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+})
+</script>
+</body>
+
+</html>
