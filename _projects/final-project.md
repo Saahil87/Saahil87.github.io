@@ -32,7 +32,9 @@ The left chart is the driver plot that shows the number of free and paid games i
 
 The dashboard shows the distribution of free and paid games across the release months of games, the months during which there was an increase or decrease in the number of games played in the platform and how the count of recommendations in the platform impacts the number of games and gaming subscription. It can be seen that more number of games are played and purchased if a game is released in the month of August, and the increase in recommendation count during the same is a correlation that gives insight about the user activity and the platform recommendation activity.
 
+<div class = 'left'>
 <vegachart schema-url="{{ site.baseurl }}/assets/json/project-dashboard.vl.json" style="width: 100%"></vegachart>
+</div>
 
 Figure 1 Dashboard showing the free and paid games and recommendation count with their release months
 
