@@ -98,98 +98,54 @@
 
 <p>The dashboard shows the distribution of free and paid games across the release months of games, the months during which there was an increase or decrease in the number of games played in the platform and how the count of recommendations in the platform impacts the number of games and gaming subscription. It can be seen that more number of games are played and purchased if a game is released in the month of August, and the increase in recommendation count during the same is a correlation that gives insight about the user activity and the platform recommendation activity.</p>
 
-<vegachart schema-url="/assets/json/project-chart1.vl.json" style="width: 100%"></vegachart>
+<vegachart schema-url="/assets/json/project-dashboard.vl.json" style="width: 100%"></vegachart>
 
-<h2 id="first-plot-visualizes-the-count-of-license-types-from-each-state">First plot visualizes the count of license types from each state.</h2>
+<p>Figure 1 Dashboard showing the free and paid games and recommendation count with their release months</p>
 
-<h3 id="features">Features:</h3>
+<h2 id="contextual-visualization">Contextual visualization</h2>
 
-<ul>
-  <li>Plot 1 is a visualization that shows the count of license types from each state from the Licenses Dataset. ‘License Type’ is a nominal variable with different categories of license types. ‘State’ is an ordinal variable. The count of license types in each state is visualized in Plot-1.</li>
-</ul>
+<p>For the contextual visualization of the Steam Game dataset, we used the Steam Video Game Hours Played dataset which includes user ID, game title, the behavior including ‘purchase’ and ‘play’ in the Steam Game platform.</p>
 
-<h3 id="design-choices">Design Choices:</h3>
+<p>(Source URL: https://www.kaggle.com/datasets/tamber/steam-video-games?resource=download )</p>
 
-<ul>
-  <li><b>Scale</b>: The x axis is chosen to be the License Type and the y-axis is chosen to be States in United States.</li>
-  <li><b>Mark</b>: The mark is chosen as ‘rect’ as it would be  ideal for interpreting the information about the count of license types in each state.</li>
-  <li><b>Encoding Type</b>: The encoding type for the License Type is chosen as ‘nominal’ since there is no ordering in the categories. The encoding type for States is chosen as ‘ ordinal’ so that the states are listed in alphabetical order.</li>
-  <li><b>Color</b>:  A colormap is used for the count of records in license type across each state. The encoding type is chosen as ‘ quantitative’, and the aggregate is chosen as ‘count’ since the objective of the visualization is visualize the count of records of license types in each state. The state having the higher number in the variety of license type is highlighted according to the color scale shown on the right.</li>
-</ul>
+<p>The Steam Game dataset includes details about the games with hardware requirements, their genres, recommendation count, release date, response count, achievement count and others but there is no information about the behavior of users in the platform with respect to the number of hours played by users. The contextual dataset- ‘Steam Video Game Hours Played’ includes information about the number of hours played by gamers in the Steam Game platform that helps visualize the overall user activity. This would benefit the developers of the Steam Game platform to improve their overall interface and gamers would be able to see game statistics and individual statistics.</p>
 
-<h3 id="transformations">Transformations:</h3>
+<p><img src="/assets/pngs/contextual-visualization.png" alt="contextual-visualization" />
+Figure 2 Top 10 free and paid games in Steam Game platform</p>
 
-<ul>
-  <li>Interactivity is achieved by the ‘brush’ parameter. The plot is interactive in a way that it allows the selection of a particular interval.</li>
-</ul>
+<p>We created Figure 2 as two non-interactive bar charts. The link to the code is included in the Analysis notebook below. The left chart shows the top 10 games that were played by users in the Steam Game platform with respect to the number of hours played. The right chart shows the top 10 games that were purchased by users in the Steam Game platform. The color map represents the number of hours played by users playing free games and paid games. The charts show that ‘Dota-2’ is the highest played and purchased game as users spend more hours playing the game but the number of hours spent on free games are way more than those of purchased games. This contextual visualization showing the game titles of top 10 free and paid games adds more information to the interactive dashboard shown in Figure 1.</p>
 
-<h3 id="overlap">Overlap:</h3>
-<ul>
-  <li>There is no overlap with the analysis done in Homework-9 as different datasets have been used for both approaches.</li>
-</ul>
+<p>Apart from this visualization, we found a chart from newszoo.com (https://newzoo.com/insights/articles/adventure-games-boast-longer-playtimes-but-battle-royale-is-stickier-on-console)  that shows the impact of new content on gaming consoles and daily playtime of users. The chart shown in Figure 3 is an interesting insight about how the playtime spikes during the release month of games on a console. The graph shows the increase in average daily playtime across months when a new season of the game, Apex is launched. This supports the insights obtained from the dashboard shown in Figure 1 that there is a correlation between the playtime of users and the release month of the games.</p>
 
-<vegachart schema-url="/assets/json/visualization.vl.json" style="width: 100%"></vegachart>
+<p><img src="/assets/pngs/apex-chart.png" alt="apex-chart" />
+Fig 3. Impact of new gaming content on playtime</p>
 
-<h2 id="second-plot-is-a-histogram-of-frequency-of-license-types">Second plot is a histogram of frequency of license types.</h2>
+<h2 id="conclusion">Conclusion</h2>
 
-<h3 id="features-1">Features:</h3>
+<p>By visualizing a dashboard and two charts, we discovered insights about the number of free and paid games on the Steam Game platform and how the count of recommendations on the platform impacts the number of games played with respect to the release month of the games. The contextual visualizations helped in identifying the top 10 free and paid games in the platform and an increased playtime is observed for free games. Another visualization gave a generic insight that the average playtime spiked whenever a game is launched on console platforms.  By analyzing the gaming platform data and visualizations, effective implementation can be made in terms of features, modified subscription services and improved gaming content.</p>
 
-<ul>
-  <li>Plot 2 is a histogram of the frequency of license types. ‘License Type’ is a nominal variable with different categories of license types. The frequency of license types in each state across US is visualized in Plot-2.</li>
-</ul>
+<h2 id="references">References</h2>
 
-<h3 id="design-choices-1">Design Choices:</h3>
-
-<ul>
-  <li><b>Scale</b>: The x axis is chosen to be the License Type and the y-axis is chosen to be the frequency.</li>
-  <li><b>Mark</b>: The mark is chosen as ‘bar’ as it would be  ideal for interpreting the information about the frequency of license types in each state.</li>
-  <li><b>Encoding Type</b>: The encoding type for the License Type is chosen as ‘nominal’ since there is no ordering in the categories.</li>
-  <li><b>Color</b>:  The color of the bars is not chosen as the objective is to only visualize the frequency of each license type, and by default is blue in color. The encoding type is chosen as ‘ quantitative’, and the aggregate is chosen as ‘count’ since the objective of the visualization is visualize the frequency of  license types.</li>
-</ul>
-
-<h3 id="transformations-1">Transformations:</h3>
-
-<ul>
-  <li>Plot-2 is not interactive, and it is a histogram of the frequency of license types.</li>
-</ul>
-
-<h3 id="overlap-1">Overlap:</h3>
-<ul>
-  <li>There is no overlap with the analysis done in Homework-9 as different datasets have been used for both approaches.</li>
-</ul>
-
-<vegachart schema-url="/assets/json/visualization2.vl.json" style="width: 100%"></vegachart>
-
-<h2 id="third-and-final-plot-is-an-interactive-dashboard-of-both-plots">Third and final plot is an interactive dashboard of both plots</h2>
-
-<p>The plot showing the count of license types in each state(Plot-1) and the frequency of license types (Plot-2) have been used to create an interactive dashboard. The encoding type, color code and other characteristics are the same as shown in Plot-1 and Plot-2.</p>
-
-<p><b>Interactivity</b>: The dashboard is interactive. If a particular interval is selected in the left visualization, the plot on the right is updated showing the frequency of license types according to the region selected in the License Type vs States visualization.</p>
-
-<p>The interactivity helps in visualizing the information better; The frequency of license types in a particular state or group of states can be visualized easily and the count can be interpreted in a better way.</p>
-
-<vegachart schema-url="/assets/json/dashboard.vl.json" style="width: 100%"></vegachart>
-
-<h2 id="the-data-and-analysis">The data and analysis</h2>
-
-<p>Below is where we have put some links to both the data and the analysis code as buttons:</p>
-
-<!-- these are written in a combo of html and liquid -->
+<ol>
+  <li>
+    <p>Steam Game Data - dataset by craigkelly. (2016, December 12). data.world. https://data.world/craigkelly/steam-game-data</p>
+  </li>
+  <li>
+    <p>Steam Video Games. (2017, March 9). Kaggle. https://www.kaggle.com/datasets/tamber/steam-video-games</p>
+  </li>
+  <li>
+    <p>2021, J. L. T. 1 4. (2021, December 3). Console Games Data Playtime and Session Metrics. Newzoo. https://newzoo.com/insights/articles/adventure-games-boast-longer-playtimes-but-battle-royale-is-stickier-on-console</p>
+  </li>
+</ol>
 
 <div class="left">
-<a class="m-1 btn btn-outline-primary btn-2 " href="https://raw.githubusercontent.com/UIUC-iSchool-DataViz/is445_bcubcg_fall2022/main/data/licenses_fall2022.csv">
+<a class="m-1 btn btn-outline-primary btn-2 " href="https://raw.githubusercontent.com/Saahil87/Saahil87.github.io/main/_data/games-features.csv">
   The Data
 </a>
 </div>
 
-<div class="center">
-<a class="m-1 btn btn-outline-primary btn-2 " href="https://starboard.gg/vasanthachandrasekaran/Chandrasekaran-vasantha-homework-10-net49aB">
-  Analysis on Starboard
-</a>
-</div>
-
 <div class="right">
-<a class="m-1 btn btn-outline-primary btn-2 " href="https://github.com/Saahil87/Saahil87.github.io/blob/main/python_notebooks/test_imports_License.ipynb">
+<a class="m-1 btn btn-outline-primary btn-2 " href="https://github.com/Saahil87/Saahil87.github.io/blob/main/python_notebooks/chandrasekaran-vasantha-final-project-part-2.ipynb">
   Analysis on Jupyter
 </a>
 </div>
