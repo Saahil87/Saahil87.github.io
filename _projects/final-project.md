@@ -38,9 +38,7 @@ Figure 1 Dashboard showing the free and paid games and recommendation count with
 
 ## Contextual visualization
 
-For the contextual visualization of the Steam Game dataset, we used the Steam Video Game Hours Played dataset which includes user ID, game title, the behavior including 'purchase' and 'play' in the Steam Game platform.
-
-(Source URL: https://www.kaggle.com/datasets/tamber/steam-video-games?resource=download )
+For the contextual visualization of the [Steam Game dataset](https://www.kaggle.com/datasets/tamber/steam-video-games?resource=download), we used the Steam Video Game Hours Played dataset which includes user ID, game title, the behavior including 'purchase' and 'play' in the Steam Game platform.
 
 The Steam Game dataset includes details about the games with hardware requirements, their genres, recommendation count, release date, response count, achievement count and others but there is no information about the behavior of users in the platform with respect to the number of hours played by users. The contextual dataset- 'Steam Video Game Hours Played' includes information about the number of hours played by gamers in the Steam Game platform that helps visualize the overall user activity. This would benefit the developers of the Steam Game platform to improve their overall interface and gamers would be able to see game statistics and individual statistics.
 
