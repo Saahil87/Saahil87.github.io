@@ -95,5 +95,5 @@ By visualizing a dashboard and two charts, we discovered insights about the numb
 </div>
 
 <div class="right">
-{% include elements/button.html link="https://github.com/Saahil87/Saahil87.github.io/blob/main/python_notebooks/chandrasekaran-vasantha-final-project-part-2.ipynb" text="Analysis on Jupyter" %}
+{% include elements/button.html link="https://github.com/Saahil87/Saahil87.github.io/blob/main/python_notebooks/vasantha-final-visualization-part-3.ipynb" text="Analysis on Jupyter" %}
 </div>
