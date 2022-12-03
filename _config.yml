@@ -5,9 +5,9 @@
 # NOTE: it looks like you need to rebuild + repush everytime you update this _config.yml file
 
 ### Site Settings ###
-title               : PossibleCorg 
+title               : Saahil Hiranandani 
 description         : >-
-                      I may or may not be a corgi.
+                      Software Engineer and Data Scientist
 baseurl             : ""   # Change to empty quotes if you are hosting your site at <your-username>.github.io directly,
 #                                             otherwise will be hosted at <your-username>.github.io/{{base_url}}
 repository          : Saahil87               # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects)
@@ -34,26 +34,26 @@ nav_exclude:                                            # The following paths ar
 
 ### Author Info ###
 author:
-  name              : A. P. Corgi
-  image             : https://dogtime.com/assets/uploads/gallery/pembroke-welsh-corgi-dog-breed-pictures/prance-8.jpg
-  behance           : your_username
+  name              : Saahil
+  image             : https://lh3.googleusercontent.com/PpqjYhGzfZBjXmeXdXuUFXAL7cQmURNackQrMrMUVwPUR351_-esodM-m0-KhesCeA9wC7DSpsKwnZS8ErIc8wS8OdBmFXgmZIHqhaHLUAiEFCvb-Fk6i5xnfm0m3uoyoKvSCqwhjA2V6R46v4Wo6VdJ10Bm4N42s3dPxIzZszneD1iBQXwnjBDgegSsVUhOReoFNlGrqckiQlxPGewEpGqOfJu2XSmKEU3urFFprwPruFXxHi0JDV_9vN-W1sEEXzlNQWxQn7Uw36EP_dtug4bQHuI_sUtMu3FPMwG9YEVD5r4Vj0YkTYVQG-xvBaz1R4tzMjm2gfOGbudAaWGOZKTygKLCpm-czFpV-58SqZwa35ehhBY977omkOr0twYP5JXsRin3dTFdd_H2pXtR4j_JwtqasPhZU6u24FFgdyAnp5Bz4LUapSZxVUBsHPhi6BCw98zdUhTO47Jlve3nSr1C2l8rcBdw_C-gMGaIwGqcP4Xu5cETKniAcm71qrlxaQbLKfG9j11l_wwjCIIdfu7SGtb071zVT3N-m_nVqwghVWHJtH8Aw6WDRgxpDnUL2pkiXTaJWHWA7GGiVaxXhcxfW1YxvV_IMScFoOslPBZgbOJ4-Isk9lkHq8hOM1UMFvf5tDHvPvWrIhh2Aqu5qTXgBkCFnpEdYMismzPkt2WPP_JS37i9j4bV9RLsMY1C5QnsilKwhqGWyHQQew5wgZXojqU2aV-CxRUV55whIjPrzDSnNzqLcAmIN-T6V-FuHcDTl5QdrrvMEkLzAkPuZY0SP_HqtkLTcpRizIp0JMCEi3YkiySFkDWLc6elOLOst4E2L_BAwm1cN15w_b8P8haFjmeazJrop-7TZB9FZL-dmT7_IQl32HmFSTSwPgk8jg4Q8R-bsz1bHGJax7ut7OvxytVCpnZpr8uaduMVxtaEkA=w739-h737-no?authuser=0
+#  behance           : your_username
 # dribbble          : your_username
-  email             : username@domain.com
-  facebook          : your_username
+  email             : hiranandanisaahil@gmail.com
+#  facebook          : your_username
   github            : Saahil87 # JPN
 # gitlab            : your_username
 # instagram         : your_username
 # kaggle            : your_username
-  linkedin          : your_username
-  medium            : your_username
+  linkedin          : saahil-hiranandani
+#  medium            : your_username
 # soundcloud        : your_username
 # spotify           : your_username
 # stackoverflow     : your_user_id
 # tumblr            : your_username.tumblr.com
-  twitch            : your_username
-  twitter           : your_username
-  vimeo             : your_username
-  youtube           : your_channel_name
+#  twitch            : your_username
+#  twitter           : your_username
+#  vimeo             : your_username
+#  youtube           : your_channel_name
 # keybase           : your_username
 
 

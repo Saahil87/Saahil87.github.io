@@ -52,7 +52,7 @@
   <main class="flex-shrink-0 container mt-5">
     <nav class="navbar navbar-expand-lg navbar-themed">
 
-  <a class="navbar-brand" href="/"><h5><b>PossibleCorg</b></h5></a>
+  <a class="navbar-brand" href="/"><h5><b>Saahil Hiranandani</b></h5></a>
 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
     <i class="fas fa-1x fa-bars text-themed"></i>
@@ -63,7 +63,7 @@
 
       <a class="nav-item nav-link active" href="/projects/">Projects</a>
 
-      <a class="nav-item nav-link " href="/blog/">Blog</a>
+      <!-- <a class="nav-item nav-link " href="/blog/">Blog</a> -->
 
       <a class="nav-item nav-link " href="/about/">About</a>
 
@@ -75,22 +75,30 @@
 
 </nav>
     <div class="col-lg-10 mx-auto mt-5 markdown-body">
-  <h1 id="an-in-depth-analysis-of-steam-data">An in-depth analysis of Steam data</h1>
-<ul>
-  <li>completed by Vasantha Chandrasekaran and Saahil Hiranandani</li>
-</ul>
+  <h1 id="in-depth-analysis-of-steam-data"><center>In-depth analysis of Steam data</center></h1>
 
-<h2 id="data">Data</h2>
+<p><br /></p>
 
-<p>Data for this project comes from <a href="https://data.world/craigkelly/steam-game-data">Steam Game Data</a> which is a combination of data from publicly available Steam API’s and steamspy.com, inspired by steamdb.info. We have also referred Professor Jill’s <a href="https://starboard.gg/jnaiman/inClass_week10_online_fall2022-nrSZM7g">In class notebooks</a> for reference.</p>
+<h4 id="vasantha-chandrasekaran-and-saahil-hiranandani"><center>Vasantha Chandrasekaran and Saahil Hiranandani</center></h4>
+<center>2/12/2022</center>
 
-<h2 id="background">Background</h2>
+<p><img src="https://cdn.akamai.steamstatic.com/store/home/store_home_share.jpg" alt="avatar" /></p>
+
+<h2 id="background"><center>Background</center></h2>
 
 <p>Steam is a video game distribution platform that has gained immense popularity among the gamers across the world. The platform has about 50,000 games and about 120 million monthly active users. By analyzing the Steam Game Platform statistics and session metrics, interesting insights could be obtained. The insights would benefit game publishers in finding the factors that keeps players engaged, gamers in knowing player shares, new genres, and other gaming platform competitors.</p>
 
 <p>In this article, we aim to visualize aspects of the Steam Game Platform such as the recommendation count, the number of free and paid games and their trends with respect to the release month of the games. An interactive dashboard is generated using the source data  to observe the correlation in the number of games played and the recommendation count with the release month of the games.</p>
 
-<h2 id="interactive-visualization">Interactive visualization</h2>
+<p><br /></p>
+
+<h2 id="data"><center>Data</center></h2>
+
+<p>Data for this project comes from <a href="https://data.world/craigkelly/steam-game-data">Steam Game Data</a> which is a combination of data from publicly available Steam API’s and steamspy.com, inspired by steamdb.info. We have also referred Professor Jill’s <a href="https://starboard.gg/jnaiman/inClass_week10_online_fall2022-nrSZM7g">In class notebooks</a> for reference.</p>
+
+<p><br /></p>
+
+<h2 id="interactive-visualization"><center>Interactive visualization</center></h2>
 
 <p>The interactive dashboard shown in Figure 1 shows the number of free and paid games in the Steam Game Platform and the recommendation count in games with respect to the month of release of games.  If an interval of months on the left plot is selected using the mouse pointer, the line chart in the right changes according to the interval selected</p>
 
@@ -98,31 +106,45 @@
 
 <p>The dashboard shows the distribution of free and paid games across the release months of games, the months during which there was an increase or decrease in the number of games played in the platform and how the count of recommendations in the platform impacts the number of games and gaming subscription. It can be seen that more number of games are played and purchased if a game is released in the month of August, and the increase in recommendation count during the same is a correlation that gives insight about the user activity and the platform recommendation activity.</p>
 
-<vegachart schema-url="/assets/json/project-dashboard.vl.json" style="width: 100%"></vegachart>
+<p><br /></p>
+
+<center><vegachart schema-url="/assets/json/project-dashboard.vl.json" style="width: 100%"></vegachart></center>
 
 <p>Figure 1 Dashboard showing the free and paid games and recommendation count with their release months</p>
 
-<h2 id="contextual-visualization">Contextual visualization</h2>
+<p><br /></p>
+
+<h2 id="contextual-visualization"><center>Contextual visualization</center></h2>
 
 <p>For the contextual visualization of the Steam Game dataset, we used the <a href="https://www.kaggle.com/datasets/tamber/steam-video-games?resource=download">Steam Video Game Hours Played dataset</a> which includes user ID, game title, the behavior including ‘purchase’ and ‘play’ in the Steam Game platform.</p>
 
 <p>The Steam Game dataset includes details about the games with hardware requirements, their genres, recommendation count, release date, response count, achievement count and others but there is no information about the behavior of users in the platform with respect to the number of hours played by users. The contextual dataset- ‘Steam Video Game Hours Played’ includes information about the number of hours played by gamers in the Steam Game platform that helps visualize the overall user activity. This would benefit the developers of the Steam Game platform to improve their overall interface and gamers would be able to see game statistics and individual statistics.</p>
 
-<p><img src="/assets/pngs/contextual-visualization.png" alt="contextual-visualization" />
-Figure 2 Top 10 free and paid games in Steam Game platform</p>
+<p><br /></p>
+
+<p><img src="/assets/pngs/contextual-visualization.png" alt="avatar" /></p>
+
+<p>Figure 2 Top 10 free and paid games in Steam Game platform</p>
+
+<p><br /></p>
 
 <p>We created Figure 2 as two non-interactive bar charts. The link to the code is included in the Analysis notebook below. The left chart shows the top 10 games that were played by users in the Steam Game platform with respect to the number of hours played. The right chart shows the top 10 games that were purchased by users in the Steam Game platform. The color map represents the number of hours played by users playing free games and paid games. The charts show that ‘Dota-2’ is the highest played and purchased game as users spend more hours playing the game but the number of hours spent on free games are way more than those of purchased games. This contextual visualization showing the game titles of top 10 free and paid games adds more information to the interactive dashboard shown in Figure 1.</p>
 
 <p>Apart from this visualization, we found a chart from <a href="https://newzoo.com/insights/articles/adventure-games-boast-longer-playtimes-but-battle-royale-is-stickier-on-console">newszoo.com</a>  that shows the impact of new content on gaming consoles and daily playtime of users. The chart shown in Figure 3 is an interesting insight about how the playtime spikes during the release month of games on a console. The graph shows the increase in average daily playtime across months when a new season of the game, Apex is launched. This supports the insights obtained from the dashboard shown in Figure 1 that there is a correlation between the playtime of users and the release month of the games.</p>
 
-<p><img src="/assets/pngs/apex-chart.png" alt="apex-chart" />
-Fig 3. Impact of new gaming content on playtime</p>
+<p><br /></p>
 
-<h2 id="conclusion">Conclusion</h2>
+<p><img src="/assets/pngs/apex-chart.png" alt="avatar" /></p>
+
+<p>Fig 3. Impact of new gaming content on playtime</p>
+
+<h2 id="conclusion"><center>Conclusion</center></h2>
 
 <p>By visualizing a dashboard and two charts, we discovered insights about the number of free and paid games on the Steam Game platform and how the count of recommendations on the platform impacts the number of games played with respect to the release month of the games. The contextual visualizations helped in identifying the top 10 free and paid games in the platform and an increased playtime is observed for free games. Another visualization gave a generic insight that the average playtime spiked whenever a game is launched on console platforms.  By analyzing the gaming platform data and visualizations, effective implementation can be made in terms of features, modified subscription services and improved gaming content.</p>
 
-<h2 id="references">References</h2>
+<p><br /></p>
+
+<h2 id="references"><center>References</center></h2>
 
 <ol>
   <li>
@@ -152,37 +174,38 @@ Fig 3. Impact of new gaming content on playtime</p>
   </main>
   <footer class="mt-auto py-3 text-center">
 
-  <small class="text-muted mb-2">
-    <i class="fas fa-code"></i> with <i class="fas fa-heart"></i>
-    by <strong>A. P. Corgi</strong>
-  </small>
+    <small class="text-muted mb-2">
+      <i class="fas fa-code"></i> with <i class="fas fa-heart"></i>
+      by <strong>Saahil</strong>
+    </small>
 
-  <div class="container-fluid justify-content-center"><a class="social mx-1"  href="https://www.behance.net/your_username"
+  <div class="container-fluid justify-content-center">
+    <!-- <a class="social mx-1"  href="https://www.behance.net/your_username"
        style="color: #6c757d"
        onMouseOver="this.style.color='#1769ff'"
        onMouseOut="this.style.color='#6c757d'">
-      <i class="fab fa-behance fa-1x"></i>
-    </a><a class="social mx-1"  href="mailto:username@domain.com"
+      <i class="fab fa-behance fa-1x"></i></a> -->
+    <a class="social mx-1"  href="mailto:hiranandanisaahil@gmail.com"
        style="color: #6c757d"
        onMouseOver="this.style.color='#db4437'"
        onMouseOut="this.style.color='#6c757d'">
-      <i class="fas fa-envelope fa-1x"></i>
-    </a><a class="social mx-1"  href="https://www.facebook.com/your_username"
+      <i class="fas fa-envelope fa-1x"></i></a>
+      <!-- <a class="social mx-1"  href="https://www.facebook.com/your_username"
        style="color: #6c757d"
        onMouseOver="this.style.color='#3b5998'"
        onMouseOut="this.style.color='#6c757d'">
-      <i class="fab fa-facebook fa-1x"></i>
-    </a><a class="social mx-1"  href="https://www.github.com/Saahil87"
+      <i class="fab fa-facebook fa-1x"></i> </a>-->
+      <a class="social mx-1"  href="https://www.github.com/Saahil87"
        style="color: #6c757d"
        onMouseOver="this.style.color='#333333'"
        onMouseOut="this.style.color='#6c757d'">
       <i class="fab fa-github fa-1x"></i>
-    </a><a class="social mx-1"  href="https://www.linkedin.com/in/your_username"
+    </a><a class="social mx-1"  href="https://www.linkedin.com/in/saahil-hiranandani"
        style="color: #6c757d"
        onMouseOver="this.style.color='#007bb5'"
        onMouseOut="this.style.color='#6c757d'">
       <i class="fab fa-linkedin-in fa-1x"></i>
-    </a><a class="social mx-1"  href="https://medium.com/@your_username"
+    <!-- </a><a class="social mx-1"  href="https://medium.com/@your_username"
        style="color: #6c757d"
        onMouseOver="this.style.color='#00ab6c'"
        onMouseOut="this.style.color='#6c757d'">
@@ -206,8 +229,8 @@ Fig 3. Impact of new gaming content on playtime</p>
        style="color: #6c757d"
        onMouseOver="this.style.color='#ff0000'"
        onMouseOut="this.style.color='#6c757d'">
-      <i class="fab fa-youtube fa-1x"></i>
-    </a>
+      <i class="fab fa-youtube fa-1x"></i> -->
+    </a> 
 
 </div><small id="attribution">
     theme <a href="https://github.com/YoussefRaafatNasry/portfolYOU">portfolYOU</a>
